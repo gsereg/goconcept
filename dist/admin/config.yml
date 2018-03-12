@@ -16,9 +16,9 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Description", name: "body", widget: "markdown"}
       - 
-      label: Immagini
-      name: images
-      widget: list
-      fields:
-        - {label: "Immagine", name: "photo", widget: "image"}
+        label: Immagini
+        name: images
+        widget: list
+        fields:
+          - {label: "Immagine", name: "photo", widget: "image"}
       - {label: "Layout", name: "layout", widget: "hidden", default : "progetto.html"}
