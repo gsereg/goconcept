@@ -12,5 +12,13 @@ collections: # A list of collections the CMS should be able to edit
     format : "json"
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Copertina", name: "cover", widget: "image"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Description", name: "body", widget: "markdown"}
+      - 
+      label: Immagini
+      name: images
+      widget: list
+      fields:
+        - {label: "Immagine", name: "photo", widget: "image"}
       - {label: "Layout", name: "layout", widget: "hidden", default : "progetto.html"}

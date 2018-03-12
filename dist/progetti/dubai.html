@@ -9,8 +9,8 @@
   <nav class="navbar-fixed-top navbar navbar-full">
     <a class="navbar-brand" href="./"><img height=" alt=" src="logo.png" class="center-block img-fluid" style="width:630;"></a>
     <ul class="m-t-1 nav navbar-nav pull-right hidden-md-up">
-      <li class="nav-item active">
-        <a class="active nav-link" href="progetti.html">Progetti</a>
+      <li class="nav-item">
+        <a class="nav-link" href="progetti.html">Progetti</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="brands.html">Brands</a>
@@ -23,8 +23,8 @@
       </li>
     </ul>
     <ul class="lead m-t-1 nav navbar-nav pull-right hidden-xs-down hidden-sm-down">
-      <li class="nav-item active">
-        <a class="active nav-link" href="progetti.html">Progetti</a>
+      <li class="nav-item">
+        <a class="nav-link" href="progetti.html">Progetti</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="brands.html">Brands</a>
@@ -37,42 +37,21 @@
       </li>
     </ul>
   </nav>
-  <div class="section" id="images">
+  <br>
+  <div class="section b-b">
+    <div class="container">
+      <div class="row" draggable="true">
+        <div class="col-lg-12">
+          <h1 class="display-4 p-y-2 text-xs-center" style="font-size:150%">name</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class=" section" id="images">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-4 p-a-0" id="trello">
-          <div class="carousel faded slide" data-interval="false" data-ride="carousel" id="carousel-example" ng-click="gotoProject(p)">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="img-fluid">
-                <div class="carousel-caption">
-                  <a class="btn btn-info-outline"></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div><div class="col-md-4 p-a-0" id="trello">
-          <div class="carousel faded slide" data-interval="false" data-ride="carousel" id="carousel-example" ng-click="gotoProject(p)">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="img-fluid">
-                <div class="carousel-caption">
-                  <a class="btn btn-info-outline"></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div><div class="col-md-4 p-a-0" id="trello">
-          <div class="carousel faded slide" data-interval="false" data-ride="carousel" id="carousel-example" ng-click="gotoProject(p)">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="img-fluid">
-                <div class="carousel-caption">
-                  <a class="btn btn-info-outline"></a>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="col-md-4 p-a-0" ng-repeat="a in project.attachments">
+          <img class="img-fluid" src="">
         </div>
       </div>
     </div>
@@ -84,5 +63,28 @@
   </nav>
   <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+  <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script> -->
+  <!-- <script type="text/javascript">
+    var myApp = angular.module('app',[]);
+                    myApp.controller('controller', ['$scope', '$http', function($scope, $http) {
+                    var id = document.location.search.split("&")[1];
+                    $scope.searchTags = [];
+                    $http({
+                      method: 'GET',
+                      url: 'data.json'
+                    }).then(function successCallback(response) {
+                      $scope.model = response;
+                      // make some fixes on the model coming from trello
+                      $($scope.model.data.cards).each(function() {
+                        var card = this;
+                        if (card.id != id)
+                          return;
+                        console.log(card);
+                        $scope.project = card;
+                      });
+                    }, function errorCallback(response) {
+                    });
+                }]);
+  </script> -->
 </body>
 </html>
