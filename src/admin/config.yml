@@ -13,7 +13,7 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - {label: "Nome", name: "name", widget: "string"}
       - {label: "Copertina", name: "cover", widget: "image"}
-      - {label: "Layout", name: "layout", widget: "string"}
+      - {label: "Layout", name: "layout", widget: "hidden", default : "progetto.html"}
       - 
         label: Immagini
         name: images
