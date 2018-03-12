@@ -17,15 +17,6 @@ collections:
         label: Layout
         name: layout
         widget: string
-      - 
-        fields: 
-          - 
-            label: Immagine
-            name: photo
-            widget: image
-        label: Immagini
-        name: images
-        widget: list
     folder: src/progetti
     format: json
     label: Progetti
