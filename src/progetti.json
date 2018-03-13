@@ -1,4 +1,3 @@
 {
-	"layout" : "progetti.html",
-	"collections" : {"progetti" : ["dsadsdsa","saddsa"]}
+	"layout" : "_progetti.html"
 }

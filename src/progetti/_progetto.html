@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="../theme.css" rel="stylesheet" type="text/css"> </head>
+
 <body ng-controller="controller" ng-app="app">
   <nav class=" navbar-expand-md navbar navbar-full">
     <div class="container-fluid">
@@ -34,7 +36,7 @@
     <div class="container-fluid">
       <div class="row" draggable="true">
         <div class="col-lg-12">
-          <h1 class="display-4 p-y-2 text-xs-center" style="font-size:150%">luxe lake</h1>
+          <h1 class="display-4 p-y-2 text-xs-center" style="font-size:150%" ht-bind-html="title">name</h1>
         </div>
       </div>
     </div>
@@ -42,7 +44,7 @@
   <div class=" section" id="images">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-4 p-a-0" ng-repeat="a in project.attachments">
+        <div class="col-md-4 p-0" ng-repeat="immagine in immagini">
           <img class="img-fluid" src=""> </div>
       </div>
     </div>
@@ -56,7 +58,9 @@
   <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script> -->
   <!-- <script type="text/javascript">
     var myApp = angular.module('app',[]);
+                
                     myApp.controller('controller', ['$scope', '$http', function($scope, $http) {
+                
                     var id = document.location.search.split("&")[1];
                     $scope.searchTags = [];
                     $http({
@@ -67,14 +71,21 @@
                       // make some fixes on the model coming from trello
                       $($scope.model.data.cards).each(function() {
                         var card = this;
+                
                         if (card.id != id)
                           return;
                         console.log(card);
+                
                         $scope.project = card;
+                
                       });
+                
                     }, function errorCallback(response) {
                     });
+                
+                
                 }]);
   </script> -->
 </body>
+
 </html>

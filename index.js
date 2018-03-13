@@ -26,7 +26,9 @@ Metalsmith(__dirname)
   .clean(true)
   // .use(metadata())
   .use(debug())
-  .use(angular())
+  .use(angular({
+    directory : "./src"
+  }))
   .build(function(err, files) {
     if (err) { throw err; }
   });

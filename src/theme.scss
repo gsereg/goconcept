@@ -1,0 +1,203 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+// Colors
+//
+// Grayscale and brand colors for use across Bootstrap.
+
+$gray-dark : #373a3c !default;
+$gray : #55595c !default;
+$gray-light : #818a91 !default;
+$gray-lighter : #eceeef !default;
+$gray-lightest : #f7f7f9 !default;
+
+$brand-primary : #333 !default;
+$brand-success : #5cb85c !default;
+$brand-info : white !default;
+$brand-warning : #f0ad4e !default;
+$brand-danger : #d9534f !default;
+
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-flex : false !default;
+$enable-rounded : true !default;
+$enable-shadows : false !default;
+$enable-gradients : false !default;
+$enable-transitions : false !default;
+$enable-hover-media-query : false !default;
+$enable-grid-classes : true !default;
+
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+
+$spacer : 1rem !default;
+$spacer-x : $spacer !default;
+$spacer-y : $spacer !default;
+$border-width : 1px !default;
+
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg : #fff !default;
+$body-color : #373a3c !default;
+
+
+// Links
+//
+// Style anchor elements.
+
+$link-color : $brand-primary !default;
+$link-decoration : none !default;
+$link-hover-color : darken($link-color, 15%) !default;
+$link-hover-decoration : underline !default;
+
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif : "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif : Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace : Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base : Lato;
+
+// Pixel value used to responsively scale all typography. Applied to the `<html>` element.
+$font-size-root : 16px !default;
+
+$font-size-base : 1rem !default;
+$font-size-lg : 1.25rem !default;
+$font-size-sm : .875rem !default;
+$font-size-xs : .75rem !default;
+
+$headings-font-family : inherit !default;
+
+$navbar-padding-x : $spacer * 1.5 !default;
+$navbar-padding-y : $spacer * 1.5 !default;	
+
+
+@import 'bootstrap-4.0.0';
+
+
+.navbar {
+  background-color : white;
+  z-index : 10000;
+}
+
+
+.display-4 {
+	font-size : 40px;  
+}
+
+.navbar {
+  border-bottom : 1px solid #333;
+  .active {
+    font-weight: bold;
+  }
+
+}
+#bignav {
+  .col-md-4 {
+    height: 100%;
+
+    a {
+      color: #333;
+    }
+
+    img {
+      height: 100%;
+      object-fit:cover;
+    }
+  }
+}
+
+.bg-faded {
+  backround-color : #333;
+}
+
+.faded {
+  .carousel-caption {
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      padding-top: 12%;
+      background: linear-gradient(rgba(0,0,0,0) 10%,rgba(0,0,0,.7) 48%, rgba(0,0,0,.7) 52%, rgba(0,0,0,0) 75%);
+      display:flex;
+      align-items: center; justify-content: center;
+			cursor: pointer;
+    
+      &:hover {
+        background: linear-gradient(rgba(0,0,0,0.4) 0%,rgba(0,0,0,.8) 48%, rgba(0,0,0,.8) 52%, rgba(0,0,0,0.4) 100%);
+      }
+    }
+  
+  
+ 
+}
+
+#images {
+
+	
+  
+  
+    img {
+      height: 340px; 
+      object-fit: cover;
+      width:100%;
+          cursor: pointer;
+    }
+
+  
+}
+
+.full-screen {
+  z-index : 100000;
+  position : fixed;
+  top : 0px;
+  left : 0px;
+  width : 100%;
+  background-color : black;
+  overflow-y : scroll;
+  height : 100%;
+  cursor : zoom-out;
+
+  > .btn-group {
+    position: fixed;
+    top: 10px; 
+    right: 1px;
+  } 
+
+  .dropdown-menu-right {
+    right: -90px;
+  }
+
+  img { 
+    width:100%;
+  }
+}
+
+.b-b {
+ border-bottom : 1px #333 solid; 
+}
+
+.b-r {
+ border-right : 1px #333 solid; 
+}
+
+.loghi {
+  display : inline;
+  max-height : 100px;
+  max-width : 100px;
+}
+
+.section {
+  .background-image {
+    opacity:0.2;
+  }
+}
