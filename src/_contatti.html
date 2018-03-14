@@ -7,7 +7,7 @@
   <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="theme.css" rel="stylesheet" type="text/css"> </head>
 
-<body>
+<body class="home">
   <nav class=" navbar-expand-md navbar navbar-full">
     <div class="container-fluid">
       <a class="navbar-brand" href="/">
@@ -15,8 +15,8 @@
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
       <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
         <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="active nav-link" href="progetti.html">Progetti</a>
+          <li class="nav-item">
+            <a class=" nav-link" href="progetti.html">Progetti</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="brands.html">Brands</a>
@@ -31,20 +31,23 @@
       </div>
     </div>
   </nav>
-  <div class="section" id="images">
+  <div class="full-page">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-4 p-0" id="trello" ht-repeat="progetto in collections.progetti" ht-if="progetto &amp;&amp; progetto.title">
-          <div class="carousel faded slide" data-interval="false" data-ride="carousel" id="carousel-example">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="img-fluid" src="{{progetto.thumbnail}}">
-                <div class="carousel-caption" onclick="window.location = '{{progetto.path}}'">
-                  <a class="btn btn-outline-light" href="{{progetto.path}}">{{progetto.title}}</a>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="col-md-6 p-0">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4323.72771923028!2d9.198803706837328!3d45.48852243472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c6d0a5ff8249%3A0xd95108101213276c!2sGoConcept+Srl!5e0!3m2!1sit!2sit!4v1466085702133"
+            width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+        </div>
+        <div class="col-md-6 d-flex align-items-center flex-column justify-content-center">
+          <p class="lead">Indirizzi e recapiti</p>
+          <p class=""> <i class="fa fa-fw fa-building-o"></i>&nbsp; <b>Sede operativa</b>
+            <br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;Via Copernico 22&nbsp;
+            <br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;20125 Milano</p>
+          <p class=""> <i class="fa fa-fw fa-building-o"></i>&nbsp; <b>Sede legale</b>
+            <br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;Via Orio Vegani 9
+            <br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;20125 Milano</p>
+          <p class=""> <i class="fa fa-fw fa-phone"></i>&nbsp; &nbsp;+393201765700</p>
+          <p class=""> <i class="fa fa-envelope fa-fw"></i>&nbsp;&nbsp;info@goconcept.it</p>
         </div>
       </div>
     </div>
