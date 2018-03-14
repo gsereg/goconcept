@@ -6145,11 +6145,16 @@ html, body {
   opacity: 0.2; }
 
 .home .full-page {
-  min-height: calc(100% - 200px); }
+  min-height: calc(100% - 200px);
+  display: flex;
+  align-items: stretch; }
+  .home .full-page .row {
+    height: 100%; }
 
 .home .card {
   border: 0px;
   border-radius: 0px;
+  height: 100%;
   background: linear-gradient(transparent 10%, rgba(0, 0, 0, 0.7) 48%, rgba(0, 0, 0, 0.7) 52%, transparent 75%); }
   .home .card img {
     height: calc(100%);
