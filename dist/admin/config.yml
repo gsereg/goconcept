@@ -20,4 +20,24 @@ collections: # A list of collections the CMS should be able to edit
         widget: list
         fields:
           - {label: "Immagine", name: "photo", widget: "image"}
-      - {label: "Layout", name: "layout", widget: "hidden", default : "progetto.html"}
+      - {label: "Layout", name: "layout", widget: "hidden", default : "_progetto.html"}
+  - name: "brands" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Brands" # Used in the UI, ie.: "New Post"
+    folder: "src/" # The path to the folder where the documents are stored
+    create: false # Allow users to create new documents in this collection
+    format : "json"
+    fields: # The fields each document in this collection have
+      - {label: "Title", name: "title", widget: "string"}
+      - 
+        label: Categorie
+        name: categorie
+        widget: list
+        fields:
+          - {label: "Nome", name: "name", widget: "text"}
+          - 
+            label: Loghi
+            name: loghi
+            widget: list
+            fields:
+              - {label: "Immagine", name: "name", widget: "image"}
+      - {label: "Layout", name: "layout", widget: "hidden", default : "_brands.html"}
