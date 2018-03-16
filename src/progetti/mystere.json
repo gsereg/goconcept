@@ -1,22 +1,16 @@
 {
-  "title": "hgfghfhfg",
-  "thumbnail": "/img/2018-03-12.png",
-  "body": "knjbkjh\n\n\n\nsdadsaads",
+  "title": "MYSTERE, LAS VEGAS",
+  "thumbnail": "/img/vegas1.jpg",
+  "body": "",
   "images": [
     {
-      "photo": "/img/schermata 2018-03-07 alle 15.08.05.png"
+      "photo": "/img/vegas2.jpg"
     },
     {
-      "photo": "/img/2018-03-12.png"
+      "photo": "/img/vegas3.jpg"
     },
     {
-      "photo": "/img/2018-03-12.png"
-    },
-    {
-      "photo": "/img/2018-03-12.png"
-    },
-    {
-      "photo": "/img/2018-03-12.png"
+      "photo": "/img/vegas4.jpg"
     }
   ],
   "layout": "progetti/_progetto.html"

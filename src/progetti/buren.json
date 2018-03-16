@@ -1,0 +1,16 @@
+{
+  "title": "Van buren, chicago",
+  "thumbnail": "/img/buren1.jpg",
+   "images": [
+    {
+      "photo": "/img/buren2.jpg"
+    },
+    {
+      "photo": "/img/buren3.jpg"
+    },
+    {
+      "photo": "/img/buren4.jpg"
+    }
+  ],
+  "layout": "progetti/_progetto.html"
+}

@@ -80,7 +80,7 @@ $headings-font-family : inherit !default;
 $navbar-padding-x : $spacer * 1.5 !default;
 $navbar-padding-y : $spacer * 1.5 !default;	
 
-
+$breadcrumb-bg: $body-bg;
 @import 'bootstrap-4.0.0';
 
 html, body {
@@ -215,27 +215,68 @@ html, body {
   }
 }
 
-.home {
-	.full-page {
-    min-height: calc(100% - 200px);
-      display:flex;
-    align-items:stretch;
-    
-    .row {
-      height:100%;
-    }
-  }
-	.card {
+.card {
+	  overflow:hidden;
     border:0px;
     border-radius:0px;
-    height:100%;
     background: linear-gradient(rgba(0,0,0,0) 10%,rgba(0,0,0,.7) 48%, rgba(0,0,0,.7) 52%, rgba(0,0,0,0) 75%);
+    cursor:pointer;
+  
+    &:hover {
+      .btn {
+        background-color:white;
+        color: #222;
+      }
+    }
+  
     img {
-      height: calc(100%);
+      border-radius:0px;
+      transition: all  0.5s;
+      height: calc(110%);
       object-fit: cover;
-      z-index:-1
+      z-index:-1;
     }
 
 }
 
+.card.zoom {
+   &:hover {
+      img {
+        transform:scale(1.1);
+        transform-origin:center center;
+      } 
+    }
+    img {
+     	transform:scale(1.0);
+      transform-origin:center center;
+      transition: all  0.5s;
+    }
+}
+
+
+.card.scroll {
+   &:hover {
+      img {
+       	position:relative;
+        top:-20px;
+      } 
+    }
+    img {
+     	position:relative;
+      top: 0px;
+    }
+}
+
+.home {
+  .card {
+     height:100%;
+  }
+	.full-page {
+    min-height: calc(100% - 200px);
+    display:flex;
+    align-items:stretch; 
+    .row {
+      height:100%;
+    }
+  }
  }

@@ -1,0 +1,16 @@
+{
+  "title": "Go go, Las vegas",
+  "thumbnail": "/img/gogo1.jpg",
+   "images": [
+    {
+      "photo": "/img/gogo2.jpg"
+    },
+    {
+      "photo": "/img/gogo3.jpg"
+    },
+    {
+      "photo": "/img/gogo4.jpg"
+    }
+  ],
+  "layout": "progetti/_progetto.html"
+}

@@ -31,18 +31,28 @@
       </div>
     </div>
   </nav>
+  <div class="section b-b">
+    <div class="container-fluid">
+      <div class="row" draggable="true">
+        <div class="col-lg-12">
+          <ul class="breadcrumb" style="margin-bottom:0px;margin-top:0px">
+            <li class="breadcrumb-item">
+              <a href="/">Home</a>
+            </li>
+            <li class="breadcrumb-item active">Progetti</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="section" id="images">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-4 p-0" id="trello" ht-repeat="progetto in collections.progetti" ht-if="progetto &amp;&amp; progetto.title">
-          <div class="carousel faded slide" data-interval="false" data-ride="carousel" id="carousel-example">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="img-fluid" src="{{progetto.thumbnail}}">
-                <div class="carousel-caption" onclick="window.location = '{{progetto.path}}'">
-                  <a class="btn btn-outline-light" href="{{progetto.path}}">{{progetto.title}}</a>
-                </div>
-              </div>
+        <div class="col-md-4 p-0" ht-repeat="progetto in collections.progetti" ht-if="progetto &amp;&amp; progetto.title">
+          <div class="card zoom" onclick="window.location = '{{progetto.path}}'">
+            <img class="card-img" src="{{progetto.thumbnail}}" alt="Card image">
+            <div class="card-img-overlay d-flex justify-content-center align-items-center home-card">
+              <a href="{{progetto.path}}" class="btn btn-outline-light text-capitalize">{{progetto.title}}</a>
             </div>
           </div>
         </div>
