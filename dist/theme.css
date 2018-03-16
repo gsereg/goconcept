@@ -6189,3 +6189,7 @@ html, body {
   align-items: stretch; }
   .home .full-page .row {
     height: 100%; }
+
+.brand {
+  width: 100px;
+  margin: 5px; }

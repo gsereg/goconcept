@@ -20,6 +20,10 @@ Metalsmith(__dirname)
     progetti: {
       pattern: "progetti/*",
       refer: false
+    },
+    brands: {
+      pattern: "brands/*",
+      refer: false
     }
   }))
   .destination('./dist')

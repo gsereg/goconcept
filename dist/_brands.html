@@ -7,7 +7,7 @@
   <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="theme.css" rel="stylesheet" type="text/css"> </head>
 
-<body>
+<body class="brands">
   <nav class=" navbar-expand-md navbar navbar-full">
     <div class="container-fluid">
       <a class="navbar-brand" href="/">
@@ -45,12 +45,12 @@
       </div>
     </div>
   </div>
-  <div class="section" id="images">
+  <div class="section">
     <div class="container-fluid">
       <div class="row">
-        <div class="py-4 border col-md-6" ht-repeat="categoria in categorie" ht-if="progetto &amp;&amp; progetto.title">
-          <h1 class="" ht-bind-html="categoria.name">categoria</h1>
-        </div>
+        <div class="py-4 border col-md-6" ht-repeat="categoria in collections.brands" ht-if="categoria &amp;&amp; categoria.title">
+          <h1 class="" ht-bind-html="categoria.title">categoria</h1>
+          <img ht-repeat="logo in categoria.loghi" src="{{logo.url}}" class="brand"> </div>
       </div>
     </div>
   </div>
