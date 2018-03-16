@@ -1,6 +1,11 @@
 {
   "title": "Classici",
   "loghi": [
-    {}
+    {
+      "url": "/img/provasi2.png"
+    },
+    {
+      "url": "/img/cappelli.png"
+    }
   ]
 }
