@@ -10,6 +10,12 @@
     },
     {
       "photo": "/img/buren4.jpg"
+    },
+    {
+      "photo": "/img/buren5.jpg"
+    },
+    {
+      "photo": "/img/buren6.jpg"
     }
   ],
   "layout": "progetti/_progetto.html"

@@ -1,0 +1,22 @@
+{
+  "title": "Mosca",
+  "thumbnail": "/img/mosca1.jpg",
+   "images": [
+    {
+      "photo": "/img/mosca2.jpg"
+    },
+    {
+      "photo": "/img/mosca3.jpg"
+    },
+    {
+      "photo": "/img/mosca4.jpg"
+    },
+    {
+      "photo": "/img/mosca5.jpg"
+    },
+    {
+      "photo": "/img/mosca6.jpg"
+    }
+  ],
+  "layout": "progetti/_progetto.html"
+}

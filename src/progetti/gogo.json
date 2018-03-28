@@ -10,6 +10,21 @@
     },
     {
       "photo": "/img/gogo4.jpg"
+    },
+    {
+      "photo": "/img/gogo5.jpg"
+    },
+    {
+      "photo": "/img/gogo6.jpg"
+    },
+    {
+      "photo": "/img/gogo7.jpg"
+    },
+    {
+      "photo": "/img/gogo8.jpg"
+    },
+    {
+      "photo": "/img/gogo9.jpg"
     }
   ],
   "layout": "progetti/_progetto.html"
