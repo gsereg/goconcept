@@ -1,0 +1,23 @@
+{
+  "title": "Outdoor",
+   "loghi": [
+      {
+        "url": "/img/outdoor1.png"
+      },
+      {
+        "url": "/img/outdoor2.png"
+      },
+      {
+        "url": "/img/outdoor3.png"
+      },
+      {
+        "url": "/img/outdoor4.png"
+      },
+      {
+        "url": "/img/outdoor5.png"
+      },
+      {
+        "url": "/img/outdoor6.png"
+      }
+    ]
+}

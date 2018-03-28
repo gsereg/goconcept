@@ -1,0 +1,26 @@
+{
+  "title": "Fashion",
+   "loghi": [
+      {
+        "url": "/img/fashion1.png"
+      },
+      {
+        "url": "/img/fashion2.png"
+      },
+      {
+        "url": "/img/fashion3.png"
+      },
+      {
+        "url": "/img/fashion4.png"
+      },
+      {
+        "url": "/img/fashion5.png"
+      },
+      {
+        "url": "/img/fashion6.png"
+      },
+      {
+        "url": "/img/fashion7.jpg"
+      }
+    ]
+}
