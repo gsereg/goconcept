@@ -11,7 +11,7 @@
   <nav class=" navbar-expand-md navbar navbar-full">
     <div class="container-fluid">
       <a class="navbar-brand" href="/">
-        <img height="" class="center-block img-fluid" alt="" src="logo.png" width="350"> </a>
+        <img height="" class="center-block img-fluid" alt="" src="logo.png" width="320"> </a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
       <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
         <ul class="navbar-nav">
@@ -49,7 +49,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="py-4 border col-md-6" ht-repeat="categoria in collections.brands" ht-if="categoria &amp;&amp; categoria.title">
-          <h1 class="text-center mb-4" ht-bind-html="categoria.title">categoria</h1>
+          <h1 class="text-center my-5" ht-bind-html="categoria.title">categoria</h1>
           <img ht-repeat="logo in categoria.loghi" src="{{logo.url}}" class="brand"> </div>
       </div>
     </div>
