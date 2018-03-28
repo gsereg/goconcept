@@ -11,6 +11,27 @@
     },
     {
       "photo": "/img/vegas4.jpg"
+    },
+    {
+      "photo": "/img/vegas5.jpg"
+    },
+    {
+      "photo": "/img/vegas6.jpg"
+    },
+    {
+      "photo": "/img/vegas7.jpg"
+    },
+    {
+      "photo": "/img/vegas8.jpg"
+    },
+    {
+      "photo": "/img/vegas9.jpg"
+    },
+    {
+      "photo": "/img/vegas10.jpg"
+    },
+    {
+      "photo": "/img/vegas11.jpg"
     }
   ],
   "layout": "progetti/_progetto.html"
